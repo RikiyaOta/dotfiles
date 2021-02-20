@@ -8,12 +8,16 @@ CURRENT_DIR=$(pwd)
 
 for f in .??*
 do
+    [[ "$f" == ".config" ]] && continue
     [[ "$f" == ".git" ]] && continue
     [[ "$f" == ".DS_Store" ]] && continue
 
     ln -sf $CURRENT_DIR/$f ~/$f
     echo "Create symbolic link for '$f'"
 done
+
+mkdir -p ~/.config/git/
+ln -sf $CURRENT_DIR/.config/git/ignore ~/.config/git/ignore
 
 echo "Finished creating symbolic link!"
 
