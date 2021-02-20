@@ -13,7 +13,6 @@ do
     [[ "$f" == ".DS_Store" ]] && continue
 
     ln -sf $CURRENT_DIR/$f ~/$f
-    echo "Create symbolic link for '$f'"
 done
 
 mkdir -p ~/.config/git/
