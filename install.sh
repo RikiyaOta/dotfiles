@@ -11,7 +11,7 @@ do
     [[ "$f" == ".git" ]] && continue
     [[ "$f" == ".DS_Store" ]] && continue
 
-    ln -si $CURRENT_DIR/$f ~/$f
+    ln -sf $CURRENT_DIR/$f ~/$f
     echo "Create symbolic link for '$f'"
 done
 

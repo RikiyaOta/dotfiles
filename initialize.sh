@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+brew update
+brew install reattach-to-user-namespace
+
 # Prezto
 zsh -c "$(git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto")"
 
