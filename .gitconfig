@@ -11,3 +11,5 @@
     pushf = push --force-with-lease
     s     = status
     st    = status -uno
+[user]
+	name = rikiyaota
