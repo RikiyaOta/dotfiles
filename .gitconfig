@@ -1,4 +1,13 @@
+[code]
+  excludesFile = ~/.config/git/ignore
 [alias]
-    s = status
-    d = diff
-   ds = diff --staged
+    b     = branch
+    d     = diff
+    ds    = diff --staged
+    f     = fetch
+    fp    = fetch --prune
+    last  = log -n 1
+	  lol   = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    pushf = push --force-with-lease
+    s     = status
+    st    = status -uno

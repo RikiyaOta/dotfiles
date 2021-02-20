@@ -7,6 +7,9 @@
 
 alias ll='ls -lh'
 
+# tmux
+export TMUX_TMPDIR=/tmp
+
 # MacVim-KaoriYa
 alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 
