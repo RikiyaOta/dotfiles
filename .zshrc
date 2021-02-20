@@ -10,6 +10,9 @@ alias ll='ls -lh'
 # tmux
 export TMUX_TMPDIR=/tmp
 
+# psql
+export PATH="/usr/local/opt/libpq/bin:$PATH"
+
 # MacVim-KaoriYa
 alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 
