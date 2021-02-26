@@ -22,3 +22,6 @@ fi
 # Customize to your needs...
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# asdf-vm
+source $(brew --prefix asdf)/asdf.sh

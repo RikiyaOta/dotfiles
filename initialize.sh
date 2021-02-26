@@ -29,3 +29,4 @@ brew install coreutils
   fc-cache -vf
 
 # asdf-vm
+brew install asdf
