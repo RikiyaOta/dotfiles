@@ -31,3 +31,4 @@ brew install coreutils
 # asdf-vm
 brew install asdf
 
+brew install fd
