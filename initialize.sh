@@ -7,6 +7,12 @@ mkdir -p ~/.config/git/
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 /usr/local/bin/brew update
 
+# git
+brew install git
+
+# coreutils
+brew install coreutils
+
 # For tmux
 /usr/local/bin/brew install reattach-to-user-namespace
 
@@ -21,3 +27,5 @@ mkdir -p ~/.config/git/
   /usr/local/bin/brew install ricty && \
   cp -f /usr/local/opt/ricty/share/fonts/Ricty*.ttf ~/Library/Fonts/ && \
   fc-cache -vf
+
+# asdf-vm

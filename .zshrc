@@ -5,8 +5,6 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
-alias ll='ls -lh'
-
 # tmux
 export TMUX_TMPDIR=/tmp
 
