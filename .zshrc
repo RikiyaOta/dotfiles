@@ -5,8 +5,8 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
-# self bin
-export PATH="~/bin:$PATH"
+# Default Editor
+export EDITOR="vim"
 
 # tmux
 export TMUX_TMPDIR=/tmp
