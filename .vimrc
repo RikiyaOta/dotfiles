@@ -89,5 +89,7 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'mileszs/ack.vim'
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
+Plug 'JuliaEditorSupport/julia-vim'
+
 " Initialize plugin system
 call plug#end()
