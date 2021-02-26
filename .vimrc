@@ -91,5 +91,7 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 
 Plug 'JuliaEditorSupport/julia-vim'
 
+Plug 'elixir-editors/vim-elixir'
+
 " Initialize plugin system
 call plug#end()
