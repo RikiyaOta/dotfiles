@@ -5,6 +5,9 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+# self bin
+export PATH="~/bin:$PATH"
+
 # tmux
 export TMUX_TMPDIR=/tmp
 

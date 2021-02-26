@@ -32,3 +32,5 @@ brew install coreutils
 brew install asdf
 
 brew install fd
+
+brew install ripgrep
