@@ -1,0 +1,2 @@
+--exclude=deps
+--exclude=_build
