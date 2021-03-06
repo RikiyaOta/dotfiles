@@ -96,5 +96,7 @@ Plug 'mhinz/vim-mix-format'
 let g:mix_format_on_save = 1 " Automatically format on saving.
 let g:mix_format_options = '--check-equivalent'
 
+Plug 'leafOfTree/vim-vue-plugin'
+
 " Initialize plugin system
 call plug#end()
