@@ -32,3 +32,6 @@ source $(brew --prefix asdf)/asdf.sh
 
 # pyenv
 eval "$(pyenv init -)"
+
+# rbenv
+eval "$(rbenv init -)"
