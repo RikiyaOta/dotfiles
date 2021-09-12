@@ -28,7 +28,7 @@ fi
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 
 # asdf-vm
-source $(brew --prefix asdf)/asdf.sh
+. $(brew --prefix asdf)/libexec/asdf.sh
 
 # pyenv
 eval "$(pyenv init -)"
