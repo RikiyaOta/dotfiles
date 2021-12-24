@@ -16,3 +16,5 @@
 [user]
 	name = rikiyaota
 	email = rikiya0421.fcb6@gmail.com
+[init]
+	defaultBranch = main

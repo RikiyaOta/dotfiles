@@ -76,6 +76,15 @@ augroup source-vimrc
   autocmd BufWritePost *gvimrc if has('gui_running') source $MYGVIMRC
 augroup END
 
+" For Rust Langage Server
+if executable('rls')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'rls',
+        \ 'cmd': {server_info->['rustup', 'run', 'nightly', 'rls']},
+        \ 'whitelist': ['rust'],
+        \ })
+endif 
+
 " Plugin Section (powered by vim-plug)
 call plug#begin('~/.vim/plugged')
 
@@ -97,6 +106,14 @@ let g:mix_format_on_save = 1 " Automatically format on saving.
 let g:mix_format_options = '--check-equivalent'
 
 Plug 'leafOfTree/vim-vue-plugin'
+
+Plug 'rust-lang/rust.vim'
+
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
+Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
 " Initialize plugin system
 call plug#end()
