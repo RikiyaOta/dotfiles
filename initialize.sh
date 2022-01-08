@@ -34,3 +34,6 @@ brew install asdf
 brew install fd
 
 brew install ripgrep
+
+# GNU commands
+brew install gsed ggrep gawk
