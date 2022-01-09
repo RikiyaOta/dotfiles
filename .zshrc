@@ -37,9 +37,10 @@ eval "$(pyenv init -)"
 eval "$(rbenv init -)"
 
 # GNU commands
-alias cat='gcat'
-alias sed='gsed'
-alias grep='ggrep'
 alias awk='gawk'
+alias cat='gcat'
+alias find='gfind'
+alias grep='ggrep'
+alias sed='gsed'
 alias sort='gsort'
 alias xargs='gxargs'
