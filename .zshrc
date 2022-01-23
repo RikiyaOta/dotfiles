@@ -47,3 +47,6 @@ export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
 export MANPATH="/usr/local/opt/grep/libexec/gnuman:$MANPATH"
 export PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
 export MANPATH="/usr/local/opt/findutils/libexec/gnuman:$MANPATH"
+
+alias ls='ls -G --color'
+alias ll='ls -lh --color'
