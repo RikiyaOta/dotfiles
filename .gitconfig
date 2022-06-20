@@ -9,7 +9,9 @@
     f     = fetch
     fp    = fetch --prune
     last  = log -n 1
-	  lol   = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    #lol   = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    lol   = log --graph --decorate --pretty=fuller --abbrev-commit --all
+    #lol   = log --graph --decorate --pretty='format:%h (%an at %ai) %s' --abbrev-commit --all --branches
     pushf = push --force-with-lease
     s     = status
     st    = status -uno

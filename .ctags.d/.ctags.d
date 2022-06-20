@@ -1,0 +1,1 @@
+/Users/rikiyaota/Documents/dotfiles/.ctags.d

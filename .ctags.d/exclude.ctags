@@ -1,4 +1,1 @@
---exclude=deps
---exclude=_build
---exclude=node_modules
---exclude=dist
+/Users/rikiyaota/Documents/dotfiles/.ctags.d/exclude.ctags

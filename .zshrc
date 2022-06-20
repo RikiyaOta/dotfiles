@@ -15,7 +15,7 @@ export TMUX_TMPDIR=/tmp
 export PATH="/usr/local/opt/libpq/bin:$PATH"
 
 # MacVim-KaoriYa
-alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+#alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
@@ -31,10 +31,10 @@ export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 . $(brew --prefix asdf)/libexec/asdf.sh
 
 # pyenv
-eval "$(pyenv init -)"
+#eval "$(pyenv init -)"
 
 # rbenv
-eval "$(rbenv init -)"
+#eval "$(rbenv init -)"
 
 # GNU commands
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
@@ -50,3 +50,6 @@ export MANPATH="/usr/local/opt/findutils/libexec/gnuman:$MANPATH"
 
 alias ls='ls -G --color'
 alias ll='ls -lh --color'
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
