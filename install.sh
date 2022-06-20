@@ -33,6 +33,7 @@ ln -sf "${CURRENT_DIR}/.config/git/ignore" '~/.config/git/ignore'
 # For neovim
 mkdir -p ~/.config/nvim
 ln -sf "${CURRENT_DIR}/.config/nvim/init.vim" ~/.config/nvim/init.vim
+ln -sf "${CURRENT_DIR}/.config/nvim/init.lua" ~/.config/nvim/init.lua
 
 echo "Finished creating symbolic link!"
 
