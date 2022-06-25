@@ -7,4 +7,8 @@ require('packer').startup(function()
   use 'nvim-lua/plenary.nvim'
   use "jose-elias-alvarez/null-ls.nvim"
   use "jose-elias-alvarez/nvim-lsp-ts-utils"
+  use {'ibhagwan/fzf-lua',
+    -- optional for icon support
+    requires = { 'kyazdani42/nvim-web-devicons' }
+  }
 end)

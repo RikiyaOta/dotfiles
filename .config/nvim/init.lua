@@ -1,9 +1,14 @@
 require'plugins'
 
 vim.wo.number = true
-vim.bo.shiftwidth = 4
-vim.bo.tabstop = 4
+vim.bo.shiftwidth = 2
+vim.bo.tabstop = 2
 vim.bo.expandtab = true
+
+-- %:h<Tab>を%%だけで済ませるマッピング
+-- cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+
+vim.api.nvim_set_keymap('c', "fz", "FzfLua files", {noremap = true})
 
 -- For TypeScript LSP.
 local lspconfig = require("lspconfig")
