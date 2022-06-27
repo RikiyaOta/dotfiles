@@ -1,6 +1,9 @@
 require'plugins'
 
 vim.wo.number = true
+vim.o.ignorecase = true
+vim.o.smartcase = true
+vim.o.clipboard = "unnamed"
 vim.bo.shiftwidth = 2
 vim.bo.tabstop = 2
 vim.bo.expandtab = true
