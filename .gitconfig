@@ -9,6 +9,7 @@
   useBuiltin = false
 [alias]
     b     = branch
+    bd    = branch --delete --force
     d     = diff
     ds    = diff --staged
     #d     = ! git diff --name-only --relative --diff-filter=d | xargs batdiff
