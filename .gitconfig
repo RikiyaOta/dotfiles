@@ -10,10 +10,10 @@
 [alias]
     b     = branch
     bd    = branch --delete --force
+    c     = commit
+    co    = checkout
     d     = diff
     ds    = diff --staged
-    #d     = ! git diff --name-only --relative --diff-filter=d | xargs batdiff
-    #ds    = ! git diff --staged --name-only --relative --diff-filter=d | xargs batdiff
     f     = fetch
     fp    = fetch --prune
     last  = log -n 1
