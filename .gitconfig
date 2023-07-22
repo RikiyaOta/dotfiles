@@ -21,6 +21,7 @@
     pushf = push --force-with-lease
     s     = status
     st    = status -uno
+    sw    = switch
 [delta]
   navigate = true
   light = false
