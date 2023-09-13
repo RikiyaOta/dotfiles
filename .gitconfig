@@ -11,7 +11,7 @@
     b     = branch
     bd    = branch --delete --force
     c     = commit
-    co    = checkout
+    co    = !echo "switchを使え！"
     d     = diff
     ds    = diff --staged
     f     = fetch
@@ -22,6 +22,7 @@
     s     = status
     st    = status -uno
     sw    = switch
+    find-merge = "!sh -c 'commit=$0 && branch=${1:-HEAD} && (git rev-list $commit..$branch --ancestry-path | cat -n; git rev-list $commit..$branch --first-parent | cat -n) | sort -k2 -s | uniq -f1 -d | sort -n | tail -1 | cut -f2'"
 [delta]
   navigate = true
   light = false
