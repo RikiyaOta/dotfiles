@@ -15,14 +15,15 @@
     d     = diff
     ds    = diff --staged
     f     = fetch
+    find-merge = "!sh -c 'commit=$0 && branch=${1:-HEAD} && (git rev-list $commit..$branch --ancestry-path | cat -n; git rev-list $commit..$branch --first-parent | cat -n) | sort -k2 -s | uniq -f1 -d | sort -n | tail -1 | cut -f2'"
     fp    = fetch --prune
+    hard-reset = "!sh -c 'branch=$0 && git reset --hard \"origin/${branch}\"'"
     last  = log -n 1
     lol   = log --graph --decorate --pretty=oneline --abbrev-commit --all
     pushf = push --force-with-lease
     s     = status
     st    = status -uno
     sw    = switch
-    find-merge = "!sh -c 'commit=$0 && branch=${1:-HEAD} && (git rev-list $commit..$branch --ancestry-path | cat -n; git rev-list $commit..$branch --first-parent | cat -n) | sort -k2 -s | uniq -f1 -d | sort -n | tail -1 | cut -f2'"
 [delta]
   navigate = true
   light = false
