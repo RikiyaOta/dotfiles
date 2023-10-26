@@ -53,14 +53,6 @@ alias ll='ls -lh --color'
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
-# For garsche
-export SYSTEM_ENV=ootar
-
-# For Exonum
-export ROCKSDB_LIB_DIR=/opt/homebrew/Cellar/rocksdb/7.8.3/lib
-export SNAPPY_LIB_DIR=/opt/homebrew/Cellar/snappy/1.1.9/lib
-export PATH="/usr/local/opt/scala@2.13/bin:$PATH"
-
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
