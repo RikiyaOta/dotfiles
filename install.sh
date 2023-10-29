@@ -34,6 +34,9 @@ ln -sf "${CURRENT_DIR}/.config/git/ignore" ~/.config/git/ignore
 mkdir -p ~/.config/tmux/
 ln -sf "${CURRENT_DIR}/.config/tmux/tmux.conf" ~/.config/tmux/tmux.conf
 
+# For neovim (powered by AstroNvim)
+ln -sf "${CURRENT_DIR}/.config/nvim" ~/.config/nvim
+
 # For alacritty
 mkdir -p ~/.config/alacritty/
 ln -sf "${CURRENT_DIR}/.config/alacritty/alacritty.yml" ~/.config/alacritty/alacritty.yml
