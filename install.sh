@@ -28,12 +28,15 @@ done
 
 # For git
 mkdir -p ~/.config/git/
-ln -sf "${CURRENT_DIR}/.config/git/ignore" '~/.config/git/ignore'
+ln -sf "${CURRENT_DIR}/.config/git/ignore" ~/.config/git/ignore
 
-# For neovim
-mkdir -p ~/.config/nvim
-ln -sf "${CURRENT_DIR}/.config/nvim/init.vim" ~/.config/nvim/init.vim
-ln -sf "${CURRENT_DIR}/.config/nvim/init.lua" ~/.config/nvim/init.lua
+# For tmux
+mkdir -p ~/.config/tmux/
+ln -sf "${CURRENT_DIR}/.config/tmux/tmux.conf" ~/.config/tmux/tmux.conf
+
+# For alacritty
+mkdir -p ~/.config/alacritty/
+ln -sf "${CURRENT_DIR}/.config/alacritty/alacritty.yml" ~/.config/alacritty/alacritty.yml
 
 echo "Finished creating symbolic link!"
 
