@@ -35,7 +35,14 @@ mkdir -p ~/.config/tmux/
 ln -sf "${CURRENT_DIR}/.config/tmux/tmux.conf" ~/.config/tmux/tmux.conf
 
 # For neovim (powered by AstroNvim)
-ln -sf "${CURRENT_DIR}/.config/nvim" ~/.config/nvim
+# 注意: ~/.config/nvim には、AstroNvim の本家のリポジトリを配置する。
+# そして、必要に応じて user config を入れる形にする。
+if [ ! -d ~/.config/nvim ]; then
+  # If I haven't installed AstroNvim yet, install it!
+  git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+fi
+mkdir -p ~/.config/nvim/lua/plugins/user/
+ln -sf "${CURRENT_DIR}/.config/nvim/lua/plugins/user/init.lua" ~/.config/nvim/lua/plugins/user/init.lua
 
 # For alacritty
 mkdir -p ~/.config/alacritty/
