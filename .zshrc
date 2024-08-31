@@ -23,8 +23,7 @@ fi
 
 # Customize to your needs...
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+source <(fzf --zsh)
 
 # asdf-vm
 . $(brew --prefix asdf)/libexec/asdf.sh
